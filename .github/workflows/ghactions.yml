@@ -29,3 +29,8 @@ jobs:
         run: npm install -D prettier
       - name: Check formatting with Prettier
         run: npm run format
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Apply formatting changes
+          branch: ${{ github.head_ref }}
