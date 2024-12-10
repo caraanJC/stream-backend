@@ -9,6 +9,5 @@ const justine = {
 	name: "Justine",
 	age: 23,
 } satisfies User;
-const isJustineAnAdult = isAdult(justine);
+isAdult(justine);
 
-console.log(isJustineAnAdult);
