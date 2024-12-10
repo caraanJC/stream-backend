@@ -11,4 +11,4 @@ const justine = {
 } satisfies User;
 const isJustineAnAdult = isAdult(justine);
 
-console.log(isJustineAnAdult);
+  console.log(isJustineAnAdult);
