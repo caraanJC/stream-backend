@@ -1,23 +1,30 @@
 {
-  "name": "stream-backend",
-  "version": "1.0.0",
-  "description": "Backend for testing streams",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/caraanJC/stream-backend.git"
-  },
-  "keywords": [
-    "stream",
-    "backend"
-  ],
-  "author": "John Carlo B. Caraan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/caraanJC/stream-backend/issues"
-  },
-  "homepage": "https://github.com/caraanJC/stream-backend#readme"
+	"name": "stream-backend",
+	"version": "1.0.0",
+	"description": "Backend for testing streams",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc",
+		"check": "tsc --noEmit",
+		"format": "prettier --config .prettierrc src --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/caraanJC/stream-backend.git"
+	},
+	"keywords": [
+		"stream",
+		"backend"
+	],
+	"author": "John Carlo B. Caraan",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/caraanJC/stream-backend/issues"
+	},
+	"homepage": "https://github.com/caraanJC/stream-backend#readme",
+	"devDependencies": {
+		"prettier": "^3.4.2",
+		"typescript": "^5.7.2"
+	}
 }
