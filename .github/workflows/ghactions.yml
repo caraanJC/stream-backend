@@ -19,11 +19,14 @@ jobs:
   prettier:
     name: Prettier
     runs-on: ubuntu-22.04
-    strategy:
-      matrix:
-        node-version: [18]
+
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
       - name: Install dependencies
         run: npm install -D prettier
       - name: Check formatting with Prettier
