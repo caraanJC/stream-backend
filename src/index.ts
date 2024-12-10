@@ -10,4 +10,3 @@ const justine = {
 	age: 23,
 } satisfies User;
 isAdult(justine);
-
